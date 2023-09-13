@@ -31,7 +31,8 @@ namespace Crud_console
             Console.WriteLine("5 - Stampa dei campi");//
             Console.WriteLine("6 - Aggiunta di un record alle fine del file csv");//
             Console.WriteLine("7 - Funzione che imposta la lunghezza massima di ogni record alla lunghezza massima del record");//
-            Console.WriteLine("8 - Ricerca di un record dando due campi univoci");
+            Console.WriteLine("8 - Ricerca di un record dando due campi univoci");//
+            Console.WriteLine("9 - Modifica di un record dato l'indice");
             Console.ForegroundColor= ConsoleColor.Green;
             Console.WriteLine("Immetere la propria scelta");
             Console.ForegroundColor = ConsoleColor.White;
@@ -131,6 +132,32 @@ namespace Crud_console
                         }
                         Console.WriteLine(); // Vai a una nuova riga dopo aver stampato una riga completa
                     }
+                    break;
+                    case 9:
+
+                    Console.WriteLine("Inserisci l'indice dell'elemento che si vuole modificare");
+                    int indice = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Inserisci il tuo comune:");
+                    string q = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo provincia:");
+                    string w = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo regione:");
+                    string e = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo nome:");
+                    string m = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo anno:");
+                    string t = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo Data:");
+                    string y = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo Identificatore:");
+                    string u = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo Longitudine:");
+                    string f = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo Latitudine:");
+                    string o = Console.ReadLine();
+                    Console.WriteLine("Inserisci il tuo Mio vaore:");
+                    string ls = Console.ReadLine();
+                    class1.Modifica(indice, w, e, m, t, y, u, f, o, ls);
                     break;
             }
             Console.Read();
