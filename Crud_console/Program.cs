@@ -157,7 +157,7 @@ namespace Crud_console
                     string o = Console.ReadLine();
                     Console.WriteLine("Inserisci il tuo Mio vaore:");
                     string ls = Console.ReadLine();
-                    class1.Modifica(indice, w, e, m, t, y, u, f, o, ls);
+                    class1.Modifica(indice,q, w, e, m, t, y, u, f, o, ls);
                     break;
             }
             Console.Read();
